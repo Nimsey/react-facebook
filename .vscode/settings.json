@@ -1,0 +1,10 @@
+{
+    "html.format.unformatted": "",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "indentRainbow.includedLanguages": [],
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "css": "css",
+        "html": "html"
+    },
+}

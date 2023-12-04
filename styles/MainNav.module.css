@@ -1,0 +1,52 @@
+.navContainer {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    display:flex;
+    justify-content: center;;
+}
+
+.navContainer a {
+    color: white;
+    padding-bottom: 5px;
+    text-decoration: none;
+    /* Adjust to create space */
+    box-shadow: inset 0 -2px 0px 0px transparent;
+    /* Invisible shadow */
+}
+
+.navContainer a:hover {
+    box-shadow: inset 0 -1px 0px 0px #fff;
+    background-position: 0 100%;
+    padding-bottom: 5px;
+
+}
+
+.navWrap {
+    width: 80%;
+        /* flex */
+    display: flex;
+    justify-content: space-between;
+}
+
+.ulWrapLeft {
+    height: 10%;
+    
+    list-style-type: none;
+    /* flex */
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.ulWrapRight {
+    height: 10%;
+   
+    list-style-type: none;
+    /* flex */
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
