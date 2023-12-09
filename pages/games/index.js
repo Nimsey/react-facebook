@@ -1,5 +1,7 @@
-import gameStyles from "../../styles/gamesPage.module.css"
-import MainNavigation from "../../components/mainNavigation"
+import gameStyles from "../../styles/gamesPage.module.css";
+import MainNavigation from "../../components/mainNavigation";
+import styles from "../../styles/newsfeed.module.css";
+
 export default function Games() {
     return (
 
@@ -9,14 +11,49 @@ export default function Games() {
                 <div className={gameStyles.sideBar}>
                     <div className={gameStyles.sidebar__title}>
                         <h4>Gaming</h4>
-                        <span>⚙️ </span>
+                        <span>⚙️</span>
                     </div>
                     <form className={gameStyles.form}>
                         <input type="search" placeholder="Search..." />
                         <button type="submit">Search</button>
                     </form>
-<div className="playGames"></div>
+                    <div className={gameStyles.playDiv}>
+                        <div className="playGames">
+                            <span>🎮</span>Play Games
+                        </div>
+                        <div className="playGames">
+                            <span>🔔</span>Notifications
+                        </div>
+                        
+                    </div>
+                    <div className={gameStyles.yourGames}>
+                        <div className={gameStyles.yourgames__title}>
+                            <h4>Your games</h4><div>See all</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, corporis?</p>
+                        <div className={gameStyles.saveGames}><span>🔖</span>Save games</div>
+                    </div>
+
+                    <div className="games__category">
+                        <h4 className={gameStyles.h4}>Categories</h4>
+                        <ul className={gameStyles.game__types}>
+                            <li><span>🎮</span> All games</li>
+                            <li><span>🏎️</span> Action</li>
+                            <li><span>🥷</span> Adventure</li>
+                            <li><span>🕹️</span> arcade</li>
+                            <li><span>👊</span> Battle</li>
+                            <li><span>🎲</span> Board</li>
+                            <li><span>🏰</span> Builder</li>
+                            <li><span>🃏</span> Card</li>
+                            <li><span>🎰</span> Casino </li>
+                        </ul>
+                    </div>
                 </div>
+
+
+
+
+
 
                 {/* MAIN CONTENT AREA */}
                 <div className={gameStyles.mainContent}>
