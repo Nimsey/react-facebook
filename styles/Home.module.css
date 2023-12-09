@@ -6,6 +6,12 @@
   align-items: center;
 }
 
+.homeMainContainer {
+  display:flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
 .title a {
   color: #0070f3;
   text-decoration: none;

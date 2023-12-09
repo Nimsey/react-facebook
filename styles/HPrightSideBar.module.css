@@ -1,0 +1,11 @@
+.rightSideBar {
+    padding: 20px;
+}
+
+.sponserBlock{
+    display: flex;
+}
+
+div.sponserWrapper:last-child{
+    border-bottom: 1px solid black;
+}

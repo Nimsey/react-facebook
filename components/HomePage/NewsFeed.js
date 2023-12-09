@@ -12,7 +12,7 @@ const array = [
     'Avisa'
 ]
 
-export default function NewsFeed2() {
+export default function NewsFeed() {
     const userNames = array.map((currentUser, index) => {
         return <div key={index} className={styles.feedContainer}>
             <div className={styles.feedHeader}>

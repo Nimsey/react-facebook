@@ -4,39 +4,26 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles2 from '../styles/MainNav.module.css';
 import MainNavigation from '../components/mainNavigation';
-import NewsFeed from './posts/newsfeed';
+import NewsFeed from '../components/HomePage/NewsFeed';
 import RandomUpdates from './posts/randomUpdates';
+import HPleftSide from '../components/HomePage/HPleftSideBar';
+import HPrightSide from '../components/HomePage/HPrightSideBar';
 
 export default function Home() { // exporting the function Home
   return (
     <div className={styles.container}>
+
+      {/* NAVIGATIONS */}
       <Head>
-        <title>Whosebook Homepage</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Head>
-<MainNavigation />
-      <main>
-        <h1 className={styles.title}>
-          Welcome to my page!
-        </h1>
-        <p className={styles.description}>
-          Today's Newsfeed
-        </p>
+      <MainNavigation />
 
-<NewsFeed />
-<RandomUpdates />
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
+      <section className={styles.homeMainContainer}>       
+          <HPleftSide />
+          <NewsFeed />
+          <HPrightSide />
+      </section>
 
       <style jsx>{`
         main {
