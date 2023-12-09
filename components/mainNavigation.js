@@ -37,9 +37,9 @@ export default function MainNavigation() {
 
                 <ul className={styles2.ulWrapMid}>
                     <li><a href="/"><FaHome /></a></li>
-                    <li><FaGamepad /></li>
-                    <li><FaUsers /></li>
-                    <li><FaYoutube /></li>
+                    <li><a href="/games"><FaGamepad /></a></li>
+                    <li><a href="/videos"><FaUsers /></a></li>
+                    <li><a href="/videos"><FaYoutube /></a></li>
                 </ul>
 
                 <ul className={styles2.ulWrapRight}>

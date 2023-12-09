@@ -3,7 +3,7 @@ import MainNavigation from "../../components/mainNavigation"
 import NewsFeed from "../../components/HomePage/NewsFeed";
 import HPLeftSideBar from "../../components/HomePage/HPleftSideBar"
 import HPleftSide from "../../components/HomePage/HPleftSideBar";
-export default function Videos() {
+export default function Settings() {
     return (
 
         <div className={gameStyles.container}>

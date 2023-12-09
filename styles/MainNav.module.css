@@ -64,7 +64,7 @@ max-width:80%;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    width: 200px;
+    gap: 25px;
 }
 
 .ulWrapMid {
@@ -75,7 +75,7 @@ max-width:80%;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    width: 300px;
+    gap: 25px;
     
 }
 

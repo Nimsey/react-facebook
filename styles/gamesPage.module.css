@@ -1,0 +1,39 @@
+/* MAIN CONTAINERS /////////////////////// */
+.gameWrapper {
+    display: flex;
+
+}
+
+.sideBar {
+    flex: 1 1 200px;
+    background-color: white;
+}
+
+.mainContent {
+
+    flex: 2 2 75%;
+    padding: 15px;
+
+}
+
+.game__TopPanelWraper {
+    display: flex;
+    gap: 10px;
+}
+
+.gamePanel {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    flex: 1 1 100px;
+
+}
+
+.game__MidPanelWraper {
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); */
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
