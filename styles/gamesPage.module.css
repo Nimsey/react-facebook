@@ -10,8 +10,7 @@
 }
 
 .mainContent {
-
-    flex: 2 2 75%;
+    max-width: 600px;
     padding: 15px;
 
 }
@@ -21,11 +20,13 @@
     gap: 10px;
 }
 
+
 .gamePanel {
     width: 100px;
     height: 100px;
     background-color: aqua;
     flex: 1 1 100px;
+    position: relative;
 
 }
 
@@ -35,5 +36,18 @@
     grid-template-columns: repeat(5, 1fr); */
     gap: 10px;
     flex-wrap: wrap;
+    position: relative;
 
+}
+
+.overlay {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
 }
