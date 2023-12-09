@@ -8,6 +8,9 @@ import NewsFeed from '../components/HomePage/NewsFeed';
 import RandomUpdates from './posts/randomUpdates';
 import HPleftSide from '../components/HomePage/HPleftSideBar';
 import HPrightSide from '../components/HomePage/HPrightSideBar';
+import { GoogleFonts } from 'next-google-fonts';
+
+
 
 export default function Home() { // exporting the function Home
   return (
@@ -16,58 +19,16 @@ export default function Home() { // exporting the function Home
       {/* NAVIGATIONS */}
       <Head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <GoogleFonts href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" />
       </Head>
       <MainNavigation />
 
-      <section className={styles.homeMainContainer}>       
-          <HPleftSide />
-          <NewsFeed />
-          <HPrightSide />
+      <section className={styles.homeMainContainer}>
+        <HPleftSide className={styles.leftPanel} />
+        <NewsFeed className={styles.midPanel} />
+        <HPrightSide className={styles.rightPanel} />
       </section>
 
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
-        }
-      `}</style>
 
       <style jsx global>{`
         html,
@@ -75,15 +36,6 @@ export default function Home() { // exporting the function Home
           padding: 0;
           margin: 0;
           font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
             Helvetica Neue,
             sans-serif;
         }

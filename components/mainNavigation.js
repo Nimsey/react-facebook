@@ -27,7 +27,7 @@ export default function MainNavigation() {
                     <li><form className="example">
                         <input className={styles2.navSearch} type="text" placeholder="Search.." name="search"></input>
                         <button className={styles2.navSearch__btn}>
-                        <IconContext.Provider value={{ color: "white", size: ".7em", className: "searchIcon" }}>
+                        <IconContext.Provider value={{ color: "white", size: "10px", className: "searchIcon" }}>
                         <FaSearch />
                         </IconContext.Provider>
                         </button>
@@ -36,7 +36,7 @@ export default function MainNavigation() {
                 </ul>
 
                 <ul className={styles2.ulWrapMid}>
-                    <li><FaHome /></li>
+                    <li><a href="/"><FaHome /></a></li>
                     <li><FaGamepad /></li>
                     <li><FaUsers /></li>
                     <li><FaYoutube /></li>

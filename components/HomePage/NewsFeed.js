@@ -16,13 +16,13 @@ export default function NewsFeed() {
     const userNames = array.map((currentUser, index) => {
         return <div key={index} className={styles.feedContainer}>
             <div className={styles.feedHeader}>
-                <div className="userIcon"><img src="https://picsum.photos/50/50" alt="" /></div>
+                <div className={styles.userIcon}><img src="https://picsum.photos/50/50" alt="" /></div>
                 <div className="userWrap"><div className="userNames">{currentUser}</div>
-                    <div className="timeStamp">timestamp</div>
+                    <div className={styles.timestamp}>December 8th 2023</div>
                 </div>
 
             </div>
-            <div className="topTextFeed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto pariatur maxime numquam quaerat</div>
+            <div className={styles.topTextFeed}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto pariatur maxime numquam quaerat</div>
             <div className="feedImage"><img src="https://picsum.photos/400/150" alt="" /></div>
             <div className="feedDetails">
                 <ul className={styles.ulList}>

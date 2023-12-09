@@ -27,6 +27,7 @@
 
 .navWrap {
 margin: 0 10px;
+max-width:80%;
     /* flex */
     display: flex;
     justify-content: space-between;
@@ -47,6 +48,7 @@ margin: 0 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .ulWrapLeft input {
@@ -67,7 +69,7 @@ margin: 0 10px;
 
 .ulWrapMid {
     list-style-type: none;
-    
+    font-size: 21px;
     /* flex */
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +89,6 @@ margin: 0 10px;
     background-color: #1877F2;
     border: 0;
     margin-left: 1px;
-    height: 25px;
+    height: 20px;
 
 }
